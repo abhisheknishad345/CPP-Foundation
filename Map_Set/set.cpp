@@ -17,8 +17,8 @@ int main(int argc, char const *argv[])
 {
 
     // Create a set called numbers that will store integers
-    // set<int> numbers = {1, 7, 3, 2, 5, 9};
-    set<int, greater<int>> numbers = {1, 7, 3, 2, 5, 9,1,3};
+    set<int> numbers = {1, -7, 3, 2, -5, 9};
+    // set<int, greater<int>> numbers = {1, -7, 3, 2, -5, 9,1,3};
     cout <<"Size:" << numbers.size() <<endl;
     // cout << "Ascending order: ";
     //
@@ -31,10 +31,17 @@ int main(int argc, char const *argv[])
     cout <<"Size:" << numbers.size() <<endl;
     
     // Print set elements
-    cout << "Descending order: ";
+    // cout << "Descending order: ";
+    // cout << "Element:";
+    cout << "Ascending order: ";
     for (int num : numbers)
     {
-        cout << num << " ";
+        if (num<3 || num<2)
+        {
+            /* code */
+            cout << num << " ";
+        }
+        
     }
     cout <<endl;
     cout << "All clear" <<endl;

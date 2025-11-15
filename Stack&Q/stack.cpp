@@ -24,8 +24,7 @@ void printStackPreservingOriginal(stack<string>& s) { // Pass by value to create
 }
 
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]){
 
     stack<string> device;
     // Add elements to the stack
@@ -35,11 +34,12 @@ int main(int argc, char const *argv[])
     device.push("Mazda");
 
     cout << device.size() <<endl;
+    cout << device.top() <<endl;
     printStackPreservingOriginal(device);
     
     cout << device.size() <<endl;
     
-    // cout << device.top() <<endl;
+    // cout << device.peek() << endl;
     // device.top() =  "Tesla";
     // cout << device.top() <<endl;
     // cout << device.size() <<endl;
