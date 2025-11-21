@@ -12,7 +12,7 @@ bool isNumber(const string &s) {
     return true;
 }
 
-int evaluatePostfix(vector<string> &tokens) {
+int evaluatePostfix(vector<string>& tokens) {
     stack<int> st;
 
     for (string token : tokens) {
@@ -39,7 +39,7 @@ int evaluatePostfix(vector<string> &tokens) {
 }
 
 int main() {
-    vector<string> arr = {"2", "1", "+", "553", "*"};
+    vector<string> arr = {"2", "1", "+", "5", "*"};
 
     cout << evaluatePostfix(arr) << endl;  // Output: 9
     return 0;
