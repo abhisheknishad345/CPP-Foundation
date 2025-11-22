@@ -22,7 +22,7 @@ int evaluatePostfix(vector<string>& tokens) {
 
         } else {
             // token is an operator
-            int b = st.top(); st.pop();
+             int b = st.top(); st.pop();
             int a = st.top(); st.pop();
             int result = 0;
 
